@@ -1,6 +1,5 @@
 // models/book.js
 const connection = require("../config/db");
-
 const addBook = (bookData, callback) => {
   connection.query(
     "SELECT COUNT(*) AS count FROM Department WHERE subject_id = ?",
